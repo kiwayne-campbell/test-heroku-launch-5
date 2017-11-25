@@ -1,0 +1,15 @@
+<section class="container">
+  <h1>Events & Retreats</h1>
+
+  <ul>
+    <li ng-repeat="retreat in retreatsIndex.all">
+      <a ui-sref="retreatsShow({ id: retreat._id })">
+        <h4>{{ retreat.className }}</h4>
+        <p>{{ retreat.date }}</p>
+        <p>{{ retreat.time }}</p>
+        <p>£{{ retreat.price }}</p>
+      </a>
+    </li>
+  </ul>
+
+</section>

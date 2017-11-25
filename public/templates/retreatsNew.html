@@ -1,0 +1,29 @@
+<section class="form">
+  <form ng-submit="retreatsNew.create()">
+    <div class="twelve columns">
+      <label>Class Name: </label>
+      <input type="text" name="class-name" placeholder="Class Name" ng-model="retreatsNew.retreat.className" class="u-full-width">
+    </div>
+
+    <div class="twelve columns">
+      <label for="location">Address</label>
+      <input class="u-full-width" type="text" ng-model="retreatsNew.retreat.address" google-place retreat="retreatsNew.retreat">
+      <input id="hiddenLat" type="hidden" ng-model="retreatsNew.retreat.location.lat" google-place retreat="retreatsNew.retreat" value="">
+      <input id="hiddenLng" type="hidden" ng-model="retreatsNew.retreat.location.lng" google-place retreat="retreatsNew.retreat" value="">
+    </div>
+    <div class="twelve columns">
+      <label>Date: </label>
+      <input type="text" name="date" placeholder="date" ng-model="retreatsNew.retreat.date" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Start Time: </label>
+      <input type="number" name="start" placeholder="18.00" ng-model="retreatsNew.retreat.time" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Price: </label>
+      <input type="number" name="price" placeholder="£20.00" ng-model="retreatsNew.retreat.price" class="u-full-width">
+    </div>
+
+    <button>Create</button>
+  </form>
+</section>

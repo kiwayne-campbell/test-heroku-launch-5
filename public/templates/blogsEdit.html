@@ -1,0 +1,22 @@
+<section class="form">
+  <form ng-submit="blogsEdit.update()">
+    <div class="twelve columns">
+      <label>Title: </label>
+      <input type="text" name="title" placeholder="Title" ng-model="blogsEdit.blog.title" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Author: </label>
+      <input type="text" name="author" placeholder="Author" ng-model="blogsEdit.blog.author" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Image: </label>
+      <input type="text" name="image" placeholder="Image URL" ng-model="blogsEdit.blog.image" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Blog Contents: </label>
+      <textarea rows="5" cols="100" type="text" name="blog-contents" placeholder="Blog contents" ng-model="blogsEdit.blog.body" class="u-full-width"></textarea>
+    </div>
+
+    <button>Update</button>
+  </form>
+</section>

@@ -1,0 +1,10 @@
+<h1 ng-controller="PicturesIndexController as picturesIndex">Gallery</h1>
+<section class="gallery">
+  <ul class="gallery">
+    <li class="gallery" ng-repeat="picture in picturesIndex.all">
+      <a  class="gallery" ui-sref="picturesShow({ id: picture._id })">
+        <img class="gallery" ng-src="{{ picture.posterImage }}" >
+      </a>
+    </li>
+  </ul>
+</section>

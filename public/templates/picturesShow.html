@@ -1,0 +1,25 @@
+<section class="galleryShow" ng-controller="PicturesIndexController as picturesIndex">
+
+  <div class="galleryShowLayout">
+
+      <img class="galleryShow" ng-src="{{ picturesShow.picture.posterImage }}">
+
+      <div class="userButtons">
+        <a ui-sref="picturesEdit({ id: picturesShow.picture._id})"><button type="button" name="button" class="galleryShowButtons">Edit</button></a>
+        <button ng-click="picturesShow.delete()" class="galleryShowButtons">Delete</button>
+        <a ui-sref="picturesIndex" ><button class="galleryShowButtons" type="button" name="button">Back to Gallery</button></a>
+      </div>
+  </div>
+
+
+  <div class="gallery galleryTopBorder">
+    <ul class="gallery">
+      <li class="gallery subGallery" ng-repeat="picture in picturesIndex.all">
+        <a class="gallery" ui-sref="picturesShow({ id: picture._id })">
+          <img class="galleryInGalleryShow" ng-src="{{ picture.posterImage }}" >
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</section>

@@ -1,0 +1,36 @@
+<section class="form">
+  <form ng-submit="blogsNew.create()">
+    <div class="twelve columns">
+      <label>Title: </label>
+      <input type="text" name="title" placeholder="Title" ng-model="blogsNew.blog.title" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Author: </label>
+      <input type="text" name="author" placeholder="Author" ng-model="blogsNew.blog.author" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Date: </label>
+      <input type="text" name="date" placeholder="Created at" ng-model="blogsNew.blog.date" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Category: </label>
+      <select class="u-full-width" name="category" ng-model=blogsNew.blog.category>
+        <option value="Mind">Mind</option>
+        <option value="Body">Body</option>
+        <option value="Nutrition">Nutrition</option>
+        <option value="Travel">Travel</option>
+        <option value="Life">Life</option>
+      </select>
+    </div>
+    <div class="twelve columns">
+      <label>Image: </label>
+      <input type="text" name="image" placeholder="Image URL" ng-model="blogsNew.blog.image" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Blog Contents: </label>
+      <textarea rows="5" cols="100" type="text" name="blog-contents" placeholder="Blog contents" ng-model="blogsNew.blog.body" class="u-full-width"></textarea>
+    </div>
+
+    <button>Create</button>
+  </form>
+</section>

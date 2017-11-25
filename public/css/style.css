@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 0!important;
+  padding: 0!important;
+  width: 100%!important;
+}
+
+html, body {
+  font-family: 'Alegreya', serif;
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+  /*overflow-x: hidden;*/
+}
+
+header.division {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+a:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: 700;
+}
+/*NAV*/
+nav {
+  height: 5vh;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+nav ul {
+  display:inline-block;
+  margin-bottom: 5px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav li {
+  padding: 15px;
+}
+/**/
+
+.margin-left-small{
+  margin-left: 15px;
+}
+
+.margin-left-med{
+  margin-left: 50px;
+}
+
+.no-margin{
+  margin: 0;
+}
+
+/*CAROUSEL*/
+.img-fluid {
+  margin: auto;
+  width: 500vh;
+  height: 95vh;
+  min-height: 100%;
+  opacity: 0.5;
+}
+
+.carousel-text{
+  color: white
+}
+
+#carouselExampleContainer {
+  width: 100%;
+  min-height: 95vh;
+}
+
+.carousel {
+  background-color: grey;
+  width: auto;
+  height: auto;
+  min-height: 200px;
+}
+
+.carousel-caption {
+  color: #000
+}
+/**/
+
+.container{
+  margin: 40px auto;
+  text-align: left;
+}
+
+/* Social Media*/
+.raise-text{
+  line-height: 5px;
+}
+
+.fa {
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.chill-list{
+  margin-left: 50px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-youtube:hover, .fa-instagram:hover {
+  color: white;
+}
+
+/*contact Social Media*/
+.contact-sm ul {
+  display:inline-block;
+  margin-bottom: 15px;
+}
+
+.contact-sm ul li {
+  display: inline;
+}
+/**/
+
+label {
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.float-right {
+  float: right
+}
+
+.center{
+  width: 100%;
+  text-align: center;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.form {
+  margin-left: 50px;
+}
+
+/*Accordion Grid*/
+
+.accordion-grid{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card{
+  border: none;
+}
+/*
+.card-header{
+  background-color: #EEF7FA;
+  border:none;
+  margin-bottom: 5px
+}*/
+
+.card h5 a{
+  font-size: 16px;
+  font-weight: 700;
+  color: #292b2c;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #292b2c;
+}
+
+.explanatory-text .card-block{
+  color: #292b2c;
+  background-color: #fbfbfc;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+a.link{
+  text-decoration: none;
+}
+
+/**/
+
+/*Blog Styling*/
+
+li.blog-container {
+  vertical-align: top;
+  height: 100%;
+  min-height: 100%;
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 10px!important;
+  width:28%;
+  box-shadow: 0 3px 3px 0 #d8d8d8;
+  margin: 25px;
+}
+
+li.blog-container:first-child{
+  margin-left: 0;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.card-img-top {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*.blog-card:hover{
+  color: #292b2c;
+  background-color: #fbfbfc;
+  font-size: 16px;
+}
+
+.blog-card:hover a p::after{
+  content: 'Read';
+  font-size: 16px;
+}*/
+
+.card-block {
+  background: #eeebf4;
+  color: blue;
+}
+
+.home-blog-list{
+  white-space: nowrap;
+  display: inline;
+}
+
+/*Filter-Blogs*/
+.filter-options{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.filter{
+  cursor: pointer;
+  white-space: nowrap;
+  width: 100px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 5px;
+  color: #6666ff;
+  box-shadow: 0 3px 3px 0 #d8d8d8;
+  background-color: #ffffff;
+}
+
+/**/
+
+/*Google Maps*/
+.google-map{
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/**/
+/* Parallax Scrolling*/
+
+.parallax {
+  opacity: 0.5;
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.one{
+  background-image: url("/images/1.jpg");
+}
+.two{
+  background-image: url("/images/2.jpg");
+}
+.three{
+  background-image: url("/images/3.jpg");
+}
+.four{
+  background-image: url("/images/1.jpg");
+}
+.five{
+  background-image: url("/images/2.jpg");
+}
+.six{
+  background-image: url("/images/3.jpg");
+}
+.seven{
+  background-image: url("/images/1.jpg");
+}
+/**/
+
+/*blogs Show*/
+
+.blog-content{
+  margin: auto;
+  width: 90%;
+}
+
+.main-image{
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.blog-text{
+  padding: 5px;
+  background-color: #fbfbfc;
+  border-radius: 5px;
+  border: 1px solid #D3D3D3;
+}
+
+.admin-btns{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.delete-btn{
+  background-color: red;
+  border: red;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.edit-btn button{
+  background-color: blue;
+  border: blue;
+  color: white;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.back-btn button{
+  width: 200px;
+  height: auto;
+  background-color: white;
+  border-radius: 100px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/**/
+
+/*Small Screen*/
+@media screen and (max-width:640px) {
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+  body{
+    font-size: 14px;
+  }
+
+  .container{
+    margin: 35px
+  }
+
+  .carousel{
+    display: none!important;
+    /*visibility: hidden!important;*/
+  }
+
+  .mobile-hide{
+    display: none;
+  }
+
+  header.division{
+    min-height: 0;
+  }
+
+  nav{
+    height: 3vh;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .parallax{
+    opacity: 0.5;
+    height: 500px;
+    background-attachment: scroll !important;
+  }
+}
+
+/*HIDE DESKTOP*/
+@media screen and (min-width:640px) {
+  .hide-desktop{
+    display: none;
+  }
+}

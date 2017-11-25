@@ -1,0 +1,12 @@
+<section>
+  <h2>{{ retreatsShow.retreat.className }}</h2>
+  <h4>{{ retreatsShow.retreat.date }}</h4>
+  <p>{{ retreatsShow.retreat.time}}</p>
+  <p>{{ retreatsShow.retreat.price}}</p>
+
+  <google-map retreat="retreatsShow.retreat" ng-if="retreatsShow.retreat.$resolved">Map Here</google-map>
+
+  <a ui-sref="retreatsIndex"><button type="button" name="button">Back to Events & Retreats</button></a>
+  <a ui-sref="retreatsEdit({ id: retreatsShow.retreat._id})" ><button type="button" name="button">Edit</button></a>
+  <button ng-click="retreatsShow.delete()">Delete</button>
+</section>

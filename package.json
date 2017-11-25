@@ -1,0 +1,38 @@
+{
+  "name": "sophie-fitness",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "engines":{
+    "node": "8.1.4",
+    "npm": "5.3.0"
+  },
+  "author": "Chris Norman <chrisnorman1988@gmail.com> (https://github.com/smodger)",
+  "license": "ISC",
+  "dependencies": {
+    "angular-filter": "^0.5.16",
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.4",
+    "jsonwebtoken": "^7.1.9",
+    "materialize-css": "^0.100.2",
+    "mongoose": "^4.6.6",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.12.1",
+    "validator": "^6.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smodger/sophie-fitness.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Smodger/sophie-fitness/issues"
+  },
+  "homepage": "https://github.com/Smodger/sophie-fitness#readme",
+  "description": ""
+}

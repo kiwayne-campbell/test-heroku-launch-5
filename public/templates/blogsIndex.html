@@ -1,0 +1,25 @@
+<div class="filter-options">
+  <h5>Filter by categories:</h5>
+  <ul class="filter-style">
+    <li class="filter" ng-model="blog.category" ng-click="filterMind()">Mind</li>
+    <li class="filter" ng-model="blog.category" ng-click="filterBody()">Body</li>
+    <li class="filter" ng-model="blog.category" ng-click="filterNutrition()">Nutrition</li>
+    <li class="filter" ng-model="blog.category" ng-click="filterLife()">Life</li>
+    <li class="filter" ng-model="blog.category" ng-click="filterTravel()">Travel</li>
+    <li class="filter" ng-model="blog.category" ng-click="removeFilter()">Remove Filter</li>
+  </ul>
+</div>
+
+<section class="container">
+  <ul>
+    <li ng-repeat="blog in blogsIndex.all" class="blog-container card">
+      <a ui-sref="blogsShow({ id: blog._id })">
+        <img ng-src="{{ blog.image }}" class="card-img-top">
+        <div class="card-block">
+          <h2 class="card-text">{{ blog.title }}</h2>
+          <h4 class="card-text">{{ blog.author }}</h4>
+        </div>
+      </a>
+    </li>
+  </ul>
+</section>

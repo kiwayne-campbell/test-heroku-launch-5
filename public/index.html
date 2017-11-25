@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html ng-app="fitnessApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sophie's Fitness App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Karla|Libre+Baskerville|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/satellizer/0.15.5/satellizer.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="/js/app.js" charset="utf-8"></script>
+    <script src="/js/controllers/retreats.js" charset="utf-8"></script>
+    <script src="/js/controllers/blogs.js" charset="utf-8"></script>
+    <script src="/js/controllers/auth.js" charset="utf-8"></script>
+    <script src="/js/models/retreat.js" charset="utf-8"></script>
+    <script src="/js/models/blog.js" charset="utf-8"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5p7q8Ryzq-b1m8hPfLttH0nYSQx_hLRk&libraries=places" charset="utf-8"></script>
+  </head>
+
+  <body ng-controller="BlogsIndexController as blogsIndex">
+    <header class="division">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <!-- <li data-target="#carouselExampleIndicators" data-slide-to="3"></li> -->
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <!-- <a ui-sref="about"> -->
+            <img class="d-block img-fluid" src="images/wellness2.jpg" alt="First slide" width="100%">
+            <!-- <div class="carousel-caption">
+              <h4 class="carousel-text">About</h4>
+            </div> -->
+            <!-- </a> -->
+          </div>
+          <div class="carousel-item">
+            <!-- <a ui-sref="shop"> -->
+            <img class="d-block img-fluid" src="images/wellness6.jpg" alt="Second slide" width="100%">
+            <!-- <div class="carousel-caption">
+              <h4 class="carousel-text">Shop</h4>
+            </div> -->
+            <!-- </a> -->
+          </div>
+          <div class="carousel-item">
+              <!-- <a ui-sref="blogsIndex"> -->
+            <img class="d-block img-fluid" src="images/wellness7.jpg" alt="Third slide" width="100%">
+            <!-- <div class="carousel-caption"> -->
+              <!-- <h4 class="carousel-text">Blogs</h4> -->
+            <!-- </div> -->
+            <!-- </a> -->
+          </div>
+          <!-- <div class="carousel-item">
+            <a ui-sref="retreatsIndex">
+            <img class="d-block img-fluid" src="images/carousel-image2-cropped.jpg" alt="Fourth slide">
+            <div class="carousel-caption">
+              <h4>Events & Retreats</h4>
+            </div>
+            </a>
+          </div> -->
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="/#/about.html#home">Home</a></li>
+          <li><a href="/#/about.html#backstory">Backstory</a></li>
+          <li><a href="/#/about.html#services">Services</a></li>
+          <li><a href="/#/about.html#healthy">Healthy Add-ons</a></li>
+          <li><a href="#/about.html#contact">Contact</a></li>
+          <li><a href="/#/about.html#blogs">Haleeo Daily</a></li>
+          <!-- <li><a ui-sref="retreatsIndex" ui-sref-active="active">Event & Retreats</a></li> -->
+          <!-- <li><a ui-sref="blogsIndex" ui-sref-active="active">Blogs</a></li> -->
+          <!-- <li><a ui-sref="shop" ui-sref-active="active">Shop</a></li> -->
+        </ul>
+        <!-- <ul class="float-right raise-text mobile-hide">
+          <li class="no-padding"><a href="#" class="fa fa-facebook"></a></li>
+          <li class="no-padding"><a href="https://twitter.com/sheywoods?lang=en" class="fa fa-twitter"></a></li>
+          <li class="no-padding"><a href="#" class="fa fa-instagram"></a></li>
+          <li class="no-padding"><a href="#" class="fa fa-youtube"></a></li>
+        </ul> -->
+      </nav>
+    </header>
+    <main class= "container" ui-view></main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
